@@ -1,0 +1,45 @@
+.Footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 8rem;
+    background-color: $color-black;
+    color: $color-white;
+    margin-top: 6rem;
+
+    &__container {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 120rem;
+        height: 100%;
+    }
+
+    &__logo {
+        font-size: 3rem;
+    }
+
+    &__social {
+
+        &-ig {
+
+        }
+
+        &-facebook {
+
+        }
+
+        &-github {
+
+        }
+
+        &-linkedin {
+
+        }
+
+        &-medium {
+
+        }
+    }
+}

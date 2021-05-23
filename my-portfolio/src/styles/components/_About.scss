@@ -1,0 +1,45 @@
+.About {
+  &__header {
+    display: inline-block;
+    border-bottom: 5px solid $color-primary;
+    margin: $margin-medium 0;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__topic {
+    font-weight: 600;
+    font-size: 16px;
+    white-space: nowrap;
+    margin-right: 3rem;
+
+    li {
+        line-height: 1.75;
+    }
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 14px;
+    }
+  }
+
+  &__info {
+    white-space: nowrap;
+    margin-right: 3rem;
+  }
+
+  &__line {
+    height: 12rem;
+    width: 10px;
+    background-color: $color-primary;
+    margin-left: 1rem;
+
+    @media only screen and (max-width: $bp-largest) {
+        height: 20rem;
+    } 
+  }
+
+  &__description {
+    margin-left: 3.5rem;
+  }
+}

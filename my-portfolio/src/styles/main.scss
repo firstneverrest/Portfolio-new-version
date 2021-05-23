@@ -1,0 +1,16 @@
+@import "./variables.scss";
+@import "./base.scss";
+@import "./typography.scss";
+@import "./mixins.scss";
+
+@import "./components/Header";
+@import "./components/About";
+@import "./components/Skills";
+@import "./components/Projects";
+@import "./components/Blogs";
+@import "./components/Contact";
+
+
+@import "./layouts/Navbar";
+@import "./layouts/Loading";
+@import "./layouts/Footer";

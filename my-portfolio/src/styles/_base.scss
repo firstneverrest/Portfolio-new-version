@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // this defines what 1rem is
+    font-size: 62.5%; 
+    scroll-behavior: smooth;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 45%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 40%;
+    }
+
+    @media only screen and (max-width: $bp-medium-lower) {
+        font-size: 35%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 30%;
+    }
+    
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 120rem;
+    margin-top: 10rem;
+}
+
+// scrollbar
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+li {
+    list-style-type: none;
+}
+
+
