@@ -1,8 +1,6 @@
 .About {
   &__header {
-    display: inline-block;
-    border-bottom: 5px solid $color-primary;
-    margin: $margin-medium 0;
+    @include styleHeader;
   }
 
   &__container {
@@ -16,10 +14,10 @@
     margin-right: 3rem;
 
     li {
-        line-height: 1.75;
+      line-height: 1.75;
     }
     @media only screen and (max-width: $bp-largest) {
-        font-size: 14px;
+      font-size: 14px;
     }
   }
 
@@ -35,8 +33,8 @@
     margin-left: 1rem;
 
     @media only screen and (max-width: $bp-largest) {
-        height: 20rem;
-    } 
+      height: 20rem;
+    }
   }
 
   &__description {

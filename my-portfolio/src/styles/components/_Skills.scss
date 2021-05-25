@@ -1,0 +1,22 @@
+.Skills {
+  &__header {
+    @include styleHeader;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 6rem;
+  }
+
+  &__skill {
+    display: grid;
+    place-items: center;
+    color: $color-primary;
+
+    &-logo {
+      font-size: 6rem;
+      margin-bottom: 1rem;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect } from "react"
 
-// import Loading from "../layouts/Header"
+// import Loading from "../layouts/Loading"
 import Navbar from "../layouts/Navbar"
 import Header from '../components/Header'
 import Skills from '../components/Skills'
