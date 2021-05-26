@@ -17,29 +17,17 @@
     }
 
     &__logo {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     &__social {
-
-        &-ig {
-
+        & > * {
+            font-size: 2.6rem;
+            color: $color-secondary;
         }
 
-        &-facebook {
-
-        }
-
-        &-github {
-
-        }
-
-        &-linkedin {
-
-        }
-
-        &-medium {
-
+        & a:not(:last-child) {
+            margin-right: 1.2rem;
         }
     }
 }

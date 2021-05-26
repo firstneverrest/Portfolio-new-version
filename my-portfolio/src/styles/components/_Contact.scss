@@ -1,5 +1,96 @@
 .Contact {
-    &__header {
-        @include styleHeader;
+  &__header {
+    @include styleHeader;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8rem;
+  }
+
+  &__icon {
+    position: relative;
+    top: 2px;
+    color: $color-primary;
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+  &__social {
+    & > * {
+      margin-bottom: 1rem;
     }
+    & div:nth-child(3) {
+      margin-bottom: 3rem;
+    }
+
+    &-container {
+      display: flex;
+      margin-top: 0.5rem;
+    }
+  }
+
+  &__form {
+    background-color: $color-white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 3rem 4rem;
+    margin: 0 auto;
+    display: grid;
+    grid-column: 2 / 4;
+
+    &-header {
+      margin-bottom: $margin-small;
+    }
+
+    &-fullName {
+      margin-right: 2rem;
+    }
+
+    &-email {
+    }
+
+    &-container {
+      display: flex;
+    }
+
+    label::after {
+      content: "*";
+      color: red;
+      margin-left: 2px;
+    }
+
+    input {
+      width: 100%;
+      font-size: 1.6rem;
+      font-family: "Poppins", sans-serif;
+      padding: .8rem;
+      margin: $margin-smallest 0;
+      margin-bottom: $margin-medium;
+      border: 1px solid $color-black;
+    }
+
+    textarea {
+      font-family: "Poppins", sans-serif;
+      font-size: 1.6rem;
+      padding: .8rem;
+      margin-top: $margin-smallest;
+      width: 100%;
+      height: 18rem;
+      resize: none;
+    }
+
+    &-button {
+      font-family: "Poppins", sans-serif;
+      margin: 0 auto;
+      margin-top: $margin-medium;
+      width: 15rem;
+      padding: 2rem;
+      background-color: $color-primary;
+      color: $color-white;
+      outline: none;
+      cursor: pointer;
+      border: none;
+    }
+  }
 }
