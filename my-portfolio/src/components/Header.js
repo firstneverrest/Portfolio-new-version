@@ -1,11 +1,9 @@
 import React from "react"
 
-import profileImg from "../../static/profile.jpg"
-
 export default function Header() {
   return (
     <div className="Header">
-      <img className="Header__image" src={profileImg} alt="my profile image" />
+      <img className="Header__image" src="/profile.jpg" alt="my profile" />
       <div className="Header__description">
         <h1 className="Header__description-name">Chitsanupong Tangvasinkul</h1>
         <h4 className="Header__description-position">Front-end Developer</h4>
