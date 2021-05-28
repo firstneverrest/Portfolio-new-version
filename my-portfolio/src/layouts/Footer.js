@@ -17,19 +17,44 @@ export default function Footer() {
           Copyright © 2021 Chitsanupong Tangvasinkul. All rights reserved.
         </p>
         <div className="Footer__social">
-          <a href="https://www.facebook.com/firstnasa/" target="_blank" className="Footer__social-facebook">
+          <a
+            href="https://www.facebook.com/firstnasa/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="Footer__social-facebook"
+          >
             <AiFillFacebook />
           </a>
-          <a href="https://www.instagram.com/first.neverrest/" target="_blank" className="Footer__social-ig">
+          <a
+            href="https://www.instagram.com/first.neverrest/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="Footer__social-ig"
+          >
             <AiFillInstagram />
           </a>
-          <a href="https://github.com/firstneverrest" target="_blank" className="Footer__social-github">
+          <a
+            href="https://github.com/firstneverrest"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="Footer__social-github"
+          >
             <AiFillGithub />
           </a>
-          <a href="https://www.linkedin.com/in/chitsanupong-tangvasinkul-934648202/" target="_blank" className="Footer__social-linkedin">
+          <a
+            href="https://www.linkedin.com/in/chitsanupong-tangvasinkul-934648202/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="Footer__social-linkedin"
+          >
             <AiFillLinkedin />
           </a>
-          <a href="https://neverrest.medium.com/" target="_blank" className="Footer__social-medium">
+          <a
+            href="https://neverrest.medium.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="Footer__social-medium"
+          >
             <AiFillMediumSquare />
           </a>
         </div>

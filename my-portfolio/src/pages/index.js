@@ -1,15 +1,17 @@
 import React, { Fragment, useState, useEffect } from "react"
 import { graphql } from "gatsby"
 
+
 // import Loading from "../layouts/Loading"
 import Navbar from "../layouts/Navbar"
+import About from "../components/About"
 import Header from "../components/Header"
 import Skills from "../components/Skills"
 import Projects from "../components/Projects"
-import Blogs from "../components/Blogs"
-import Contact from "../components/Contact"
+import Blogs from "../components/Blogs/Blogs"
+import Activities from '../components/Activities'
+import Contact from "../components/Contact/Contact"
 import Footer from "../layouts/Footer"
-import About from "../components/About"
 
 import "../styles/main.scss"
 
@@ -60,6 +62,7 @@ export default function Home({ data }) {
         <Projects projects={projects} />
         <Blogs articles={articles}/>
         <Contact />
+        <Activities />
         <Footer />
       </div>
     </Fragment>

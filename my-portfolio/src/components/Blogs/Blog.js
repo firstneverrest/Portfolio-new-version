@@ -31,21 +31,21 @@ export default function Blog({ id, article }) {
   }
 
   const openBlog = url => {
-      console.log(url);
-      
+    console.log(url)
+
     window.open(url)
   }
 
   return (
     <div
       className={id === 0 ? `Blogs__blog element1 container1` : `Blogs__blog`}
-      onClick={() => openBlog(link)}
     >
-      <img className="Blogs__blog-img" src={thumbnail} alt="blog thumbnail" />
+      <img className="Blogs__blog-img" src={thumbnail} alt="blog thumbnail" onClick={() => openBlog(link)}/>
       <div className="Blogs__blog-container ">
-        <h4 className="Blogs__blog-title">{title}</h4>
+        <h4 className="Blogs__blog-title" onClick={() => openBlog(link)}>{title}</h4>
         <p className="Blogs__blog-date">{pubDate}</p>
         <p className="Blogs__blog-info">{content}</p>
+        <p className="Blogs__blog-readMore" onClick={() => openBlog(link)}>Read More &#8594;</p>
         <p className="Blogs__blog-categories">
           {categories.map((category, index) => {
             return (
