@@ -61,8 +61,8 @@ export default function Home({ data }) {
         <Skills />
         <Projects projects={projects} />
         <Blogs articles={articles}/>
-        <Contact />
         <Activities />
+        <Contact />
         <Footer />
       </div>
     </Fragment>

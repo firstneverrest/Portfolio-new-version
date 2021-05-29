@@ -1,3 +1,7 @@
+# credentials
+src/components/Contact/emailSender.js
+data_activities
+
 # Logs
 logs
 *.log
@@ -67,3 +71,4 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+

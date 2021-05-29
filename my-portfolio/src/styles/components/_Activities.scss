@@ -1,0 +1,34 @@
+.Activities {
+  &__container {
+    margin-left: 2rem;
+    width: 70%;
+
+    @media only screen and (max-width: $bp-medium-lower) {
+      width: 80%;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 90%;
+    }
+  }
+
+  &__header {
+    @include styleHeader;
+  }
+
+  &__card {
+    list-style-type: disc;
+    padding-left: 2rem;
+    margin-bottom: $margin-medium;
+  }
+
+  &__title {
+  }
+
+  &__date {
+    color: $color-primary;
+    margin-bottom: $margin-smallest;
+  }
+
+  &__info {
+  }
+}

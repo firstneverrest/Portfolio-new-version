@@ -5,20 +5,22 @@ export default function About() {
     <div className="About">
       <h2 className="About__header">About Me</h2>
       <div className="About__container">
-        <ul className="About__topic">
-          <li>Name:</li>
-          <li>Date of birth:</li>
-          <li>Address:</li>
-          <li>Phone:</li>
-          <li>E-mail:</li>
-        </ul>
-        <ul className="About__info">
-          <li>Chitsanupong Tangvasinkul</li>
-          <li>July 9, 2000</li>
-          <li>Samut Prakan, Thailand</li>
-          <li>085-939-2573</li>
-          <li>c.tangvasinkul@gmail.com</li>
-        </ul>
+        <div className="About__group">
+          <ul className="About__topic">
+            <li>Name:</li>
+            <li>Date of birth:</li>
+            <li>Address:</li>
+            <li>Phone:</li>
+            <li>E-mail:</li>
+          </ul>
+          <ul className="About__info">
+            <li>Chitsanupong Tangvasinkul</li>
+            <li>July 9, 2000</li>
+            <li>Samut Prakan, Thailand</li>
+            <li>085-939-2573</li>
+            <li>c.tangvasinkul@gmail.com</li>
+          </ul>
+        </div>
         <div className="About__line"></div>
         <p className="About__description">
           After my web development skills are good enough, I have a plan to step

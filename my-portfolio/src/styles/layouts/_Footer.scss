@@ -1,33 +1,47 @@
 .Footer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 8rem;
-    background-color: $color-black;
-    color: $color-white;
-    margin-top: 6rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 10rem;
+  background-color: $color-black;
+  color: $color-white;
+  margin-top: 6rem;
 
-    &__container {
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 120rem;
-        height: 100%;
+  @media only screen and (max-width: $bp-medium-lower) {
+    height: 20rem;
+  }
+
+  &__container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 120rem;
+    height: 100%;
+
+    @media only screen and (max-width: 43.75em) {
+      margin: 0 5rem;
     }
 
-    &__logo {
-        font-size: 2.5rem;
+    @media only screen and (max-width: $bp-medium-lower) {
+      flex-direction: column;
+      justify-content: space-around;
+      padding-top: 2rem;
+    }
+  }
+
+  &__logo {
+    font-size: 2.8rem;
+  }
+
+  &__social {
+    & > * {
+      font-size: 2.6rem;
+      color: $color-secondary;
     }
 
-    &__social {
-        & > * {
-            font-size: 2.6rem;
-            color: $color-secondary;
-        }
-
-        & a:not(:last-child) {
-            margin-right: 1.2rem;
-        }
+    & a:not(:last-child) {
+      margin-right: 1.2rem;
     }
+  }
 }

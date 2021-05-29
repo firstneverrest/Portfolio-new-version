@@ -17,8 +17,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `data`,
-        path: `${__dirname}/src/data/`,
+        name: `data_projects`,
+        path: `${__dirname}/src/data`,
       },
     },
     `gatsby-plugin-sass`,

@@ -40,6 +40,12 @@ body {
   margin: 0 auto;
   max-width: 120rem;
   margin-top: 10rem;
+
+  @media only screen and (max-width: $bp-medium-lower) {
+    max-width: 130rem;
+    margin: 10rem 5rem;
+  }
+
 }
 
 .scroll-margin-top {

@@ -4,9 +4,6 @@
   }
 
   &__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 8rem;
   }
 
   &__icon {
@@ -15,6 +12,10 @@
     color: $color-primary;
     font-size: 2rem;
     margin-right: 1rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      top: 4px;
+    }
   }
 
   &__social {
@@ -64,7 +65,7 @@
       width: 100%;
       font-size: 1.6rem;
       font-family: "Poppins", sans-serif;
-      padding: .8rem;
+      padding: 0.8rem;
       margin: $margin-smallest 0;
       margin-bottom: $margin-medium;
       border: 1px solid $color-black;
@@ -73,7 +74,7 @@
     textarea {
       font-family: "Poppins", sans-serif;
       font-size: 1.6rem;
-      padding: .8rem;
+      padding: 0.8rem;
       margin-top: $margin-smallest;
       width: 100%;
       height: 18rem;

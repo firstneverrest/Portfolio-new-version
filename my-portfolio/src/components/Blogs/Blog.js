@@ -31,8 +31,6 @@ export default function Blog({ id, article }) {
   }
 
   const openBlog = url => {
-    console.log(url)
-
     window.open(url)
   }
 

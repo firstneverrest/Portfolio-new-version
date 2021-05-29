@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 8rem;
+  height: 10vh;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: $color-white;
   z-index: 10;
@@ -15,6 +15,10 @@
     align-items: center;
     max-width: 120rem;
     height: 100%;
+
+    @media only screen and (max-width: 43.75em) {
+      margin: 0 5rem;
+    }
   }
 
   &__logo {
@@ -23,8 +27,9 @@
 
   &__link {
     display: flex;
+    transition: all .5s;
 
-    h3 {
+    h4 {
       position: relative;
     }
 
@@ -33,12 +38,12 @@
       text-decoration: none;
       color: $color-black;
       font-size: 16px;
-      transition: all .5s;
+      transition: all 0.5s;
       cursor: pointer;
     }
 
     a.effect-underline::after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       display: inline-block;
@@ -49,26 +54,127 @@
       opacity: 0;
       -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
       transition: opacity 0.35s, transform 0.35s;
-      -webkit-transform: scale(0,1);
-      transform: scale(0,1);
+      -webkit-transform: scale(0, 1);
+      transform: scale(0, 1);
     }
-    
+
     a.effect-underline:hover::after {
       opacity: 1;
       -webkit-transform: scale(1);
       transform: scale(1);
     }
 
+    & h4:not(:last-child) {
+      margin-right: 4rem;
+    }
+
+    h4 {
+      font-size: 1.6rem;
+    }
+
     @media only screen and (max-width: $bp-large) {
       font-size: 15px;
     }
-  }
 
-  & h3:not(:last-child) {
-    margin-right: 4rem;
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: -30rem;
+      width: 0;
+      height: 90vh;
+      top: 10vh;
+
+      h4 {
+        margin-bottom: 5rem;
+        align-self: center;
+      }
+
+      & h4:not(:last-child) {
+        margin-right: 0;
+      }
+
+      a {
+        font-size: 5rem;
+      }
+
+      a.effect-underline::after {
+        display: none;
+      }
+
+      a.effect-underline:hover::after {
+        display: none;
+      }
+    }
   }
 }
 
-h3 {
-  font-size: 1.6rem;
+.navigation {
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox:checked ~ .Navbar__link {
+    opacity: 1;
+    width: 100vw;
+    background-color: $color-white;
+    right: .5rem;
+  }
+
+  &__icon {
+    display: none;
+    position: relative;
+    margin-top: 3.5rem;
+
+    &,
+    &::before,
+    &::after {
+      display: none;
+      width: 3rem;
+      height: 2px;
+      background-color: $color-black;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
+    }
+
+    &::before {
+      top: -0.8rem;
+    }
+    &::after {
+      top: 0.8rem;
+    }
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    &__icon {
+      display: block;
+      &,
+      &::before,
+      &::after {
+        display: inline-block;
+      }
+    }
+
+  }
 }
