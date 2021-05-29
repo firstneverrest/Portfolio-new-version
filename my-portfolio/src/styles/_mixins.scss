@@ -18,7 +18,12 @@
     border-bottom: 5px solid $color-primary;
     margin: $margin-large 0;
 
-    @media only screen and (max-width: $bp-medium-lower) {
-       margin: $margin-small 0; 
+    @media only screen and (max-width: $bp-medium) {
+        margin-bottom: $margin-large;
     }
+
+    @media only screen and (max-width: $bp-medium-lower) {
+        margin-top: $margin-medium;
+    }
+
 }

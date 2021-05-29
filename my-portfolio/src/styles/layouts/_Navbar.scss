@@ -1,3 +1,13 @@
+:root {
+  --checkbox-width: 100vw;
+  --checkbox-right: 0.5rem;
+  --button-background: transparent;
+  --button-top-before: 0;
+  --button-top-after: 0;
+  --button-rotate-before: 135deg;
+  --button-rotate-after: -135deg;
+}
+
 .Navbar {
   position: fixed;
   top: 0;
@@ -27,7 +37,7 @@
 
   &__link {
     display: flex;
-    transition: all .5s;
+    transition: all 0.5s;
 
     h4 {
       position: relative;
@@ -76,6 +86,7 @@
       font-size: 15px;
     }
 
+    // change to hamburger style
     @media only screen and (max-width: $bp-medium) {
       flex-direction: column;
       align-items: center;
@@ -117,9 +128,9 @@
 
   &__checkbox:checked ~ .Navbar__link {
     opacity: 1;
-    width: 100vw;
+    width: var(--checkbox-width);
     background-color: $color-white;
-    right: .5rem;
+    right: var(--checkbox-right);
   }
 
   &__icon {
@@ -153,17 +164,18 @@
   }
 
   &__checkbox:checked + &__button &__icon {
-    background-color: transparent;
+    background-color: var(--button-background);
   }
 
   &__checkbox:checked + &__button &__icon::before {
-    top: 0;
-    transform: rotate(135deg);
+    top: var(--button-top-before);
+    transform: rotate(var(--button-rotate-before));
   }
+  
 
   &__checkbox:checked + &__button &__icon::after {
-    top: 0;
-    transform: rotate(-135deg);
+    top: var(--button-top-after);
+    transform: rotate(var(--button-rotate-after));
   }
 
   @media only screen and (max-width: $bp-medium) {
@@ -175,6 +187,5 @@
         display: inline-block;
       }
     }
-
   }
 }
