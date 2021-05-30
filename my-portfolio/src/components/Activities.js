@@ -6,7 +6,7 @@ export default function Activities() {
       <div className="scroll-margin-top">
         <a name="activities">&nbsp;</a>
       </div>
-      <div className="Activities">
+      <section className="Activities">
         <h2 className="Activities__header">Activities</h2>
         <ul className="Activities__container">
           <li className="Activities__card">
@@ -62,7 +62,7 @@ export default function Activities() {
             </p>
           </li>
         </ul>
-      </div>
+      </section>
     </React.Fragment>
   )
 }

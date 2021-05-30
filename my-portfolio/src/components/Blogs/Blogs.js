@@ -8,14 +8,14 @@ export default function Blogs({ articles }) {
       <div className="scroll-margin-top">
         <a name="blogs">&nbsp;</a>
       </div>
-      <div className="Blogs">
+      <section className="Blogs">
         <h2 className="Blogs__header">Blogs</h2>
         <div className="Blogs__grid">
           {articles.map((article, index) => {
             return <Blog key={index} id={index} article={article} />
           })}
         </div>
-      </div>
+      </section>
     </React.Fragment>
   )
 }

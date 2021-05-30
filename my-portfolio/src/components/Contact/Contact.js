@@ -9,6 +9,7 @@ import {
   AiFillMediumSquare,
 } from "react-icons/ai"
 import { BiPhoneCall } from "react-icons/bi"
+import ButtonToTop from '../ButtonToTop'
 
 // import ContactForm from './ContactForm'
 
@@ -18,7 +19,7 @@ export default function Contact() {
       <div className="scroll-margin-top">
         <a name="contact">&nbsp;</a>
       </div>
-      <div className="Contact">
+      <section className="Contact">
         <h2 className="Contact__header">Contact</h2>
         <div className="Contact__container">
           <div className="Contact__social">
@@ -56,7 +57,8 @@ export default function Contact() {
             </div>
           </div>
         </div>
-      </div>
+        <ButtonToTop />
+      </section>
     </React.Fragment>
   )
 }

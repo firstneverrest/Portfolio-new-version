@@ -1,0 +1,40 @@
+.Button-to-top {
+  position: absolute;
+  right: 0;
+  bottom: -3rem;
+
+  &__icon {
+    color: $color-black;
+    font-size: 2.5rem;
+    transition: color 0.2s ease-out;
+
+    &:nth-child(1) {
+      position: absolute;
+      top: -1.2rem;
+    }
+
+    a:hover & {
+      color: $color-primary;
+    }
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    position: relative;
+  }
+
+  &__label {
+    text-decoration: none;
+    color: $color-black;
+    transition: color 0.2s ease-out;
+
+    a:hover & {
+      color: $color-primary;
+    }
+  }
+}

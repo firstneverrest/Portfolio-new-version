@@ -39,7 +39,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="Navbar">
+    <nav className="Navbar">
       <div className="Navbar__container">
         <h1 className="Navbar__logo">Neverrest</h1>
         <input
@@ -112,6 +112,6 @@ export default function Navbar() {
           </h4>
         </div>
       </div>
-    </div>
+    </nav>
   )
 }

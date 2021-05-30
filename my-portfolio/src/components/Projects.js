@@ -10,7 +10,7 @@ export default function Projects({ projects }) {
       <div className="scroll-margin-top">
         <a name="projects">&nbsp;</a>
       </div>
-      <div className="Projects">
+      <section className="Projects">
         <h2 className="Projects__header">Projects</h2>
         <div className="Projects__grid">
           {projects.map(project => {
@@ -34,7 +34,7 @@ export default function Projects({ projects }) {
             )
           })}
         </div>
-      </div>
+      </section>
     </React.Fragment>
   )
 }

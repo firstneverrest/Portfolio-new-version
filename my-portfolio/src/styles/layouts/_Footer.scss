@@ -38,10 +38,18 @@
     & > * {
       font-size: 2.6rem;
       color: $color-secondary;
+
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 3.5rem;
+      }
     }
 
     & a:not(:last-child) {
       margin-right: 1.2rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        margin-right: 1.5rem;
+      }
     }
   }
 }

@@ -2,6 +2,10 @@
 src/components/Contact/emailSender.js
 data_activities
 
+# firebase
+firebase.json
+.firebaserc
+
 # Logs
 logs
 *.log

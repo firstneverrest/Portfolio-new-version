@@ -2,7 +2,7 @@ import React, { Fragment, useState, useEffect } from "react"
 import { graphql } from "gatsby"
 
 
-// import Loading from "../layouts/Loading"
+import Loading from "../layouts/Loading"
 import Navbar from "../layouts/Navbar"
 import About from "../components/About"
 import Header from "../components/Header"
@@ -16,7 +16,7 @@ import Footer from "../layouts/Footer"
 import "../styles/main.scss"
 
 export default function Home({ data }) {
-  // const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true)
   const [articles, setArticles] = useState([])
 
   // medium api
@@ -25,21 +25,17 @@ export default function Home({ data }) {
   // graphql request data from markdown files in projects section
   const projects = data.allMarkdownRemark.nodes
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setIsLoading(false)
-  //   }, 2000)
-  // })
-
-  // if (isLoading) {
-  //   return <Loading />
-  // }
-
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false)
+    }, 2000)
+  })
+  
   // fetch medium api
   useEffect(() => {
     fetchArticles()
   }, [])
-
+  
   // fetch articles from Medium using nocodeapi
   const fetchArticles = async () => {
     try {
@@ -51,6 +47,11 @@ export default function Home({ data }) {
       console.log(error)
     }
   }
+
+  if (isLoading) {
+    return <Loading />
+  }
+
 
   return (
     <Fragment>
@@ -64,6 +65,7 @@ export default function Home({ data }) {
         <Activities />
         <Contact />
         <Footer />
+  
       </div>
     </Fragment>
   )

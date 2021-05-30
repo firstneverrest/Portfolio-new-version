@@ -1,7 +1,7 @@
 .Header {
   display: flex;
   align-items: center;
-  padding: 0 10rem 3rem 10rem;
+  padding: 0 10rem 1.5rem 10rem;
 
   @media only screen and (max-width: $bp-medium-lower) {
     flex-direction: column;
@@ -16,7 +16,6 @@
     background: $color-white;
     border: 12px solid $color-white;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-    margin-bottom: 2rem;
 
   }
 

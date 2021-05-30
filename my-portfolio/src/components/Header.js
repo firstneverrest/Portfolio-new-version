@@ -6,7 +6,7 @@ export default function Header() {
       <div className="scroll-margin-top">
         <a name="home">&nbsp;</a>
       </div>
-      <div className="Header">
+      <header className="Header">
         <img className="Header__image" src="/profile.jpg" alt="my profile" />
         <div className="Header__description">
           <h1 className="Header__description-name">
@@ -23,7 +23,7 @@ export default function Header() {
             fundamental of web development in only a few months.
           </p>
         </div>
-      </div>
+      </header>
     </React.Fragment>
   )
 }

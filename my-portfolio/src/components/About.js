@@ -2,7 +2,7 @@ import React from "react"
 
 export default function About() {
   return (
-    <div className="About">
+    <section className="About">
       <h2 className="About__header">About Me</h2>
       <div className="About__container">
         <div className="About__group">
@@ -32,6 +32,6 @@ export default function About() {
           web development from beginning to end.
         </p>
       </div>
-    </div>
+    </section>
   )
 }

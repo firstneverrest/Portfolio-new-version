@@ -10,7 +10,7 @@ import {
 
 export default function Footer() {
   return (
-    <div className="Footer">
+    <footer className="Footer">
       <div className="Footer__container">
         <h1 className="Footer__logo">Neverrest</h1>
         <p className="Footer__copyright subtitle">
@@ -59,6 +59,6 @@ export default function Footer() {
           </a>
         </div>
       </div>
-    </div>
+    </footer>
   )
 }

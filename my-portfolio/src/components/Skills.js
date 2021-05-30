@@ -18,7 +18,7 @@ export default function Skills() {
       <div className="scroll-margin-top">
         <a name="skills">&nbsp;</a>
       </div>
-      <div className="Skills">
+      <section className="Skills">
         <h2 className="Skills__header">Skills</h2>
         <div className="Skills__grid">
           <div className="Skills__skill">
@@ -70,7 +70,7 @@ export default function Skills() {
             <h4>Vim</h4>
           </div>
         </div>
-      </div>
+      </section>
     </React.Fragment>
   )
 }

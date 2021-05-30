@@ -1,4 +1,6 @@
 .Contact {
+  position: relative;
+
   &__header {
     @include styleHeader;
   }
