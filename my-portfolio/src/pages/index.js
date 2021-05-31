@@ -18,7 +18,7 @@ import "../styles/main.scss"
 export default function Home({ data }) {
   const [isLoading, setIsLoading] = useState(true)
   const [articles, setArticles] = useState([])
-
+  
   // medium api
   const MediumUrl = "https://v1.nocodeapi.com/neverrest/medium/tbUXiyQhVDDssczC"
 

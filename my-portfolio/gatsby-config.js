@@ -21,7 +21,11 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
+
     `gatsby-plugin-sass`,
     `gatsby-transformer-remark`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
   ],
 }

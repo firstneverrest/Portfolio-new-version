@@ -1,13 +1,20 @@
 import React from "react"
+import { StaticImage } from 'gatsby-plugin-image'
 
 export default function Header() {
+
   return (
     <React.Fragment>
       <div className="scroll-margin-top">
         <a name="home">&nbsp;</a>
       </div>
       <header className="Header">
-        <img className="Header__image" src="/profile.jpg" alt="my profile" />
+        <StaticImage
+          src="../../static/profile.jpg"
+          className="Header__image"
+          alt="My profile in Chula student uniform"
+          placeholder="none"
+        />
         <div className="Header__description">
           <h1 className="Header__description-name">
             Chitsanupong Tangvasinkul
@@ -27,3 +34,4 @@ export default function Header() {
     </React.Fragment>
   )
 }
+

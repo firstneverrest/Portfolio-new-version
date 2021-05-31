@@ -38,12 +38,21 @@ export default function Blog({ id, article }) {
     <div
       className={id === 0 ? `Blogs__blog element1 container1` : `Blogs__blog`}
     >
-      <img className="Blogs__blog-img" src={thumbnail} alt="blog thumbnail" onClick={() => openBlog(link)}/>
+      <img
+        className="Blogs__blog-img"
+        src={thumbnail}
+        alt="blog thumbnail"
+        onClick={() => openBlog(link)}
+      />
       <div className="Blogs__blog-container ">
-        <h4 className="Blogs__blog-title" onClick={() => openBlog(link)}>{title}</h4>
+        <h4 className="Blogs__blog-title" onClick={() => openBlog(link)}>
+          {title}
+        </h4>
         <p className="Blogs__blog-date">{pubDate}</p>
         <p className="Blogs__blog-info">{content}</p>
-        <p className="Blogs__blog-readMore" onClick={() => openBlog(link)}>Read More &#8594;</p>
+        <p className="Blogs__blog-readMore" onClick={() => openBlog(link)}>
+          Read More &#8594;
+        </p>
         <p className="Blogs__blog-categories">
           {categories.map((category, index) => {
             return (
