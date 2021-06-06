@@ -36,6 +36,11 @@
         text-align: initial;
       }
     }
+    &-name {
+      @media only screen and (max-width: $bp-medium-lower) {
+        margin-top: $margin-small;
+      }
+    }
   }
 
   

@@ -10,13 +10,17 @@
 
   &__icon {
     position: relative;
-    top: 2px;
+    top: 3px;
     color: $color-primary;
-    font-size: 2rem;
-    margin-right: 1rem;
+    font-size: 20px;
+    margin-right: 2rem;
 
-    @media only screen and (max-width: $bp-medium) {
-      top: 4px;
+    @media only screen and (max-width: $bp-large) {
+      font-size: 16px;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      top: 2px;
     }
   }
 
