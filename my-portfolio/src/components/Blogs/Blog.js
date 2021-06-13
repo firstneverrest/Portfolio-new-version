@@ -36,7 +36,7 @@ export default function Blog({ id, article }) {
 
   return (
     <div
-      className={id === 0 ? `Blogs__blog element1 container1` : `Blogs__blog`}
+      className="Blogs_blog"
     >
       <img
         className="Blogs__blog-img"

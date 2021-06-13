@@ -6,20 +6,10 @@
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: min-content;
     grid-gap: 6rem;
-
-    @media only screen and (max-width: $bp-large) {
-      grid-template-rows: 40vh;
-    }
-
-    @media only screen and (max-width: $bp-medium) {
-      grid-template-rows: 35vh;
-    }
 
     @media only screen and (max-width: $bp-medium-lower) {
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: auto;
     }
 
     @media only screen and (max-width: $bp-small) {
@@ -83,43 +73,6 @@
 
       &:hover {
         text-decoration: underline;
-      }
-    }
-  }
-
-  .element1 {
-    display: flex;
-    grid-column: 1 / -1;
-
-    @media only screen and (max-width: $bp-medium-lower) {
-      display: block;
-      grid-column: 1 / 2;
-    }
-  }
-
-  .container1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    img {
-      grid-column: 1/3;
-      max-height: 100%;
-      object-fit: contain;
-
-      @media only screen and (max-width: $bp-medium-lower) {
-        width: 100%;
-        grid-column: none;
-        height: auto;
-        object-fit: cover;
-        cursor: pointer;
-      }
-    }
-
-    div {
-      margin: 0 2.5rem;
-
-      @media only screen and (max-width: $bp-medium-lower) {
-        margin: auto;
       }
     }
   }
