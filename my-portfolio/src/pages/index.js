@@ -1,7 +1,6 @@
 import React, { Fragment, useState, useEffect } from "react"
 import { graphql } from "gatsby"
 
-
 import Loading from "../layouts/Loading"
 import Navbar from "../layouts/Navbar"
 import About from "../components/About"
@@ -9,7 +8,7 @@ import Header from "../components/Header"
 import Skills from "../components/Skills"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs/Blogs"
-import Activities from '../components/Activities'
+import Activities from "../components/Activities"
 import Contact from "../components/Contact/Contact"
 import Footer from "../layouts/Footer"
 
@@ -18,7 +17,7 @@ import "../styles/main.scss"
 export default function Home({ data }) {
   const [isLoading, setIsLoading] = useState(true)
   const [articles, setArticles] = useState([])
-  
+
   // medium api
   const MediumUrl = "https://v1.nocodeapi.com/neverrest/medium/tbUXiyQhVDDssczC"
 
@@ -28,14 +27,14 @@ export default function Home({ data }) {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false)
-    }, 2000)
+    }, 1600)
   })
-  
+
   // fetch medium api
   useEffect(() => {
     fetchArticles()
   }, [])
-  
+
   // fetch articles from Medium using nocodeapi
   const fetchArticles = async () => {
     try {
@@ -52,7 +51,6 @@ export default function Home({ data }) {
     return <Loading />
   }
 
-
   return (
     <Fragment>
       <Navbar />
@@ -61,11 +59,10 @@ export default function Home({ data }) {
         <About />
         <Skills />
         <Projects projects={projects} />
-        <Blogs articles={articles}/>
+        <Blogs articles={articles} />
         <Activities />
         <Contact />
         <Footer />
-  
       </div>
     </Fragment>
   )
