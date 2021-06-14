@@ -43,7 +43,6 @@ After I had finished my old portfolio with HTML, CSS, JavaScript and not using f
 - created 404 Page not found for handling navigation to undefined path
 - used Static image from gatsby-plugin-image to make responsive image and traced placeholder for my profile image
 - full responsive design with media queries
--
 
 ### Reference
 
