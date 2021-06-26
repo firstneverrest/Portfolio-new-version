@@ -41,7 +41,9 @@ export default function Navbar() {
   return (
     <nav className="Navbar">
       <div className="Navbar__container">
-        <h1 className="Navbar__logo">Neverrest</h1>
+        <a className="Navbar__logo" href="#home" onClick={linkClickHandler}>
+          Neverrest
+        </a>
         <input
           type="checkbox"
           className="navigation__checkbox"
