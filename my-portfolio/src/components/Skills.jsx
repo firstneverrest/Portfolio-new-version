@@ -5,12 +5,12 @@ import {
   DiSass,
   DiPython,
   DiRubyRough,
-  DiJava,
+  DiMongodb,
   DiNodejsSmall,
   DiReact,
   DiVim,
 } from "react-icons/di"
-import { SiJavascript, SiTypescript, SiMysql } from "react-icons/si"
+import { SiJavascript, SiTypescript, SiMysql, SiDocker, SiTailwindcss, SiMaterialUi, SiBootstrap } from "react-icons/si"
 
 export default function Skills() {
   return (
@@ -50,24 +50,36 @@ export default function Skills() {
             <h4>Ruby</h4>
           </div>
           <div className="Skills__skill">
-            <DiJava className="Skills__skill-logo" />
-            <h4>Java</h4>
-          </div>
-          <div className="Skills__skill">
-            <SiMysql className="Skills__skill-logo" />
-            <h4>MySQL</h4>
+            <DiReact className="Skills__skill-logo" />
+            <h4>React</h4>
           </div>
           <div className="Skills__skill">
             <DiNodejsSmall className="Skills__skill-logo" />
             <h4>Node.js</h4>
           </div>
           <div className="Skills__skill">
-            <DiReact className="Skills__skill-logo" />
-            <h4>React</h4>
+            <DiMongodb className="Skills__skill-logo" />
+            <h4>MongoDB</h4>
           </div>
           <div className="Skills__skill">
-            <DiVim className="Skills__skill-logo" />
-            <h4>Vim</h4>
+            <SiMysql className="Skills__skill-logo" />
+            <h4>MySQL</h4>
+          </div>
+          <div className="Skills__skill">
+            <SiDocker className="Skills__skill-logo" />
+            <h4>Docker</h4>
+          </div>
+          <div className="Skills__skill">
+            <SiBootstrap className="Skills__skill-logo" />
+            <h5>Bootstrap 5</h5>
+          </div>
+          <div className="Skills__skill">
+            <SiMaterialUi className="Skills__skill-logo" />
+            <h5>Material UI</h5>
+          </div>
+          <div className="Skills__skill">
+            <SiTailwindcss className="Skills__skill-logo" />
+            <h5>Tailwind CSS</h5>
           </div>
         </div>
       </section>
