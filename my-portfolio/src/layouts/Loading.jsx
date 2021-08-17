@@ -13,11 +13,11 @@ const Loading = () => {
       setLoadingWidth(prevState => {
         return prevState + 1
       })
-    }, 14)
+    }, 10)
 
     setTimeout(() => {
       clearInterval(loading)
-    }, 1600)
+    }, 1400)
   }
 
   const widthStyle = {
