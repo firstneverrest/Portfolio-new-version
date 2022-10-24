@@ -1,4 +1,5 @@
 import React, { Fragment, useState, useEffect } from "react"
+import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 
 import Loading from "../layouts/Loading"
@@ -8,7 +9,7 @@ import Header from "../components/Header"
 import Skills from "../components/Skills"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs/Blogs"
-import Activities from "../components/Activities"
+import Experience from "../components/Experience"
 import Contact from "../components/Contact/Contact"
 import Footer from "../layouts/Footer"
 
@@ -19,7 +20,8 @@ export default function Home({ data }) {
   const [articles, setArticles] = useState([])
 
   // medium api
-  const MediumUrl = "https://v1.nocodeapi.com/neverrest/medium/tbUXiyQhVDDssczC"
+  const MediumUrl =
+    "https://v1.nocodeapi.com/firstneverrest/medium/yhDtPtDCrvdBEFeE"
 
   // graphql request data from markdown files in projects section
   const projects = data.allMarkdownRemark.nodes
@@ -53,6 +55,24 @@ export default function Home({ data }) {
 
   return (
     <Fragment>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Chitsanupong Tangvasinkul Portfolio"
+        />
+        <meta property="og:title" content="Chitsanupong Portfolio Website" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:description"
+          content="Chitsanupong Tangvasinkul Portfolio Website"
+        />
+        <meta property="og:image" content="static/profile.jpg" />
+        <meta property="og:image:type" content="image/jpg" />
+        <title>Chitsanupong Tangvasinkul Portfolio</title>
+      </Helmet>
       <Navbar />
       <div className="container">
         <Header />
@@ -60,7 +80,7 @@ export default function Home({ data }) {
         <Skills />
         <Projects projects={projects} />
         <Blogs articles={articles} />
-        <Activities />
+        <Experience />
         <Contact />
         <Footer />
       </div>
