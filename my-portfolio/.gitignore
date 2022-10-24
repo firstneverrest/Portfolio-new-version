@@ -6,6 +6,9 @@ data_activities
 firebase.json
 .firebaserc
 
+# build
+build
+
 # Logs
 logs
 *.log
