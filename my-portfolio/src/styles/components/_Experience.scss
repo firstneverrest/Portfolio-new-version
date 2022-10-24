@@ -1,4 +1,4 @@
-.Activities {
+.Experience {
   &__container {
     margin-left: 2rem;
     width: 70%;
@@ -13,6 +13,10 @@
 
   &__header {
     @include styleHeader;
+  }
+
+  &__sub-header {
+    margin: $margin-small 0;
   }
 
   &__card {

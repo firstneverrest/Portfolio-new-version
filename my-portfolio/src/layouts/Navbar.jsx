@@ -97,10 +97,10 @@ export default function Navbar() {
           <h4>
             <a
               className="effect-underline"
-              href="#activities"
+              href="#experience"
               onClick={linkClickHandler}
             >
-              Activities
+              Experience
             </a>
           </h4>
           <h4>
