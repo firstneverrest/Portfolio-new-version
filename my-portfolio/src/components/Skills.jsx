@@ -3,14 +3,20 @@ import { AiFillHtml5 } from "react-icons/ai"
 import {
   DiCss3,
   DiSass,
-  DiPython,
-  DiRubyRough,
   DiMongodb,
   DiNodejsSmall,
   DiReact,
-  DiVim,
+  DiUnitySmall,
 } from "react-icons/di"
-import { SiJavascript, SiTypescript, SiMysql, SiDocker, SiTailwindcss, SiMaterialUi, SiBootstrap } from "react-icons/si"
+import {
+  SiJavascript,
+  SiTypescript,
+  SiMysql,
+  SiDocker,
+  SiTailwindcss,
+  SiMaterialUi,
+  SiFigma,
+} from "react-icons/si"
 
 export default function Skills() {
   return (
@@ -42,14 +48,6 @@ export default function Skills() {
             <h4>TypeScript</h4>
           </div>
           <div className="Skills__skill">
-            <DiPython className="Skills__skill-logo" />
-            <h4>Python</h4>
-          </div>
-          <div className="Skills__skill">
-            <DiRubyRough className="Skills__skill-logo" />
-            <h4>Ruby</h4>
-          </div>
-          <div className="Skills__skill">
             <DiReact className="Skills__skill-logo" />
             <h4>React</h4>
           </div>
@@ -70,16 +68,20 @@ export default function Skills() {
             <h4>Docker</h4>
           </div>
           <div className="Skills__skill">
-            <SiBootstrap className="Skills__skill-logo" />
-            <h5>Bootstrap 5</h5>
-          </div>
-          <div className="Skills__skill">
             <SiMaterialUi className="Skills__skill-logo" />
             <h5>Material UI</h5>
           </div>
           <div className="Skills__skill">
             <SiTailwindcss className="Skills__skill-logo" />
             <h5>Tailwind CSS</h5>
+          </div>
+          <div className="Skills__skill">
+            <SiFigma className="Skills__skill-logo" />
+            <h5>Figma</h5>
+          </div>
+          <div className="Skills__skill">
+            <DiUnitySmall className="Skills__skill-logo" />
+            <h5>Unity</h5>
           </div>
         </div>
       </section>
